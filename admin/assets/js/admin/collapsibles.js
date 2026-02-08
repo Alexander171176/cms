@@ -50,6 +50,7 @@
         const preview = qs('#preview');
         const btn = qs('#previewCollapse');
         const reload = qs('#previewReload');
+        const home = qs('#home');
         const fullBtn = qs('#previewFull');
         const sidebar = qs('#sidebar');
         const main = qs('#main');
@@ -85,6 +86,7 @@
         if (body) body.classList.toggle('hidden', collapsed);
         if (title) title.classList.toggle('hidden', collapsed);
         if (reload) reload.classList.toggle('hidden', collapsed);
+        if (home) home.classList.toggle('hidden', collapsed);
 
         // Full button UI
         if (fullBtn) {

@@ -27,7 +27,7 @@
                 </svg>
             </button>
 
-            <a href="/index.html" title="На главную" class="ml-1.5">
+            <a id="home" href="/index.html" title="На главную" class="ml-1.5">
                 <svg class="w-4 h-4"
                      xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24">
                     <path class="fill-current text-blue-700 dark:text-blue-300"
