@@ -3,7 +3,7 @@
 /*    box-sizing: border-box;*/
 /*}*/
 .CodeMirror {
-    height: 600px !important;
+    height: 500px !important;
 }
 @keyframes toast-in {
     from {

@@ -7,7 +7,8 @@
         const currentFile = qs('#currentFile');
 
         // ✅ Бинарные файлы (картинки/pdf/svg/webp и т.д.) — открываем в preview и НЕ читаем как текст
-        const BIN_EXT = /\.(pdf|svg|webp|jpe?g|gif|png|bmp|ico)$/i;
+        const BIN_EXT = /\.(pdf|svg|webp|jpe?g|gif|png|bmp|ico|mp4|webm|ogg|mov|avi|mkv|woff2?|ttf|otf|eot)$/i;
+
         if (BIN_EXT.test(path)) {
             State.currentPath = path;
             State.original = '';
@@ -54,7 +55,7 @@
         if (!State.currentPath || !editor) return;
 
         // если открыт бинарный файл — не сохраняем текстом
-        const BIN_EXT = /\.(pdf|svg|webp|jpe?g|gif|png|bmp|ico)$/i;
+        const BIN_EXT = /\.(pdf|svg|webp|jpe?g|gif|png|bmp|ico|mp4|webm|ogg|mov|avi|mkv|woff2?|ttf|otf|eot)$/i;
         if (BIN_EXT.test(State.currentPath)) {
             Admin.Toast?.error?.('Нельзя сохранять бинарный файл как текст');
             return;
